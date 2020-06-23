@@ -21,7 +21,7 @@
               }"
               class="no-underline"
             >
-              <TourCard
+              <ListingCard
                 :listingTitle="listing.listingName"
                 :listingLocation="listing.listingLocation"
                 :price="listing.price"
@@ -38,12 +38,12 @@
 </template>
 <script>
 import LandingHeader from "../components/navs/LandingHeader.vue";
-import TourCard from "../components/cards/ListingCard";
+import ListingCard from "../components/cards/ListingCard";
 export default {
   name: "Home",
   components: {
     LandingHeader,
-    TourCard,
+    ListingCard,
   },
 };
 </script>

@@ -8,7 +8,7 @@
       </div>
 
       <p class="font-display text-lg mt-8">${{ price }}</p>
-      <a-rate value="value" disabled="true" />
+      <a-rate :default-value="2" disabled />
     </div>
   </div>
 </template>
@@ -20,7 +20,7 @@ export default {
     listingLocation: String,
     price: String,
     rating: Number,
-    coverPhoto: String
-  }
+    coverPhoto: String,
+  },
 };
 </script>
