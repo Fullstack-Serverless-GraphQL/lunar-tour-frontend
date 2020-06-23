@@ -21,13 +21,13 @@ export default {
   name: "RedOutlineButton",
   props: {
     text: String,
-    isLoading: Boolean,
+    isLoading: Boolean
   },
   methods: {
     handleClick(evt) {
       this.$emit("click", evt);
-    },
-  },
+    }
+  }
 };
 </script>
 <style>

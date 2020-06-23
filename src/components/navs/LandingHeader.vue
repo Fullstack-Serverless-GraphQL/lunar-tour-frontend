@@ -14,13 +14,13 @@ export default {
   props: {
     imgURL: String,
     text: String,
-    margin: String,
+    margin: String
   },
   computed: {
     urlProps() {
       return "--img-url:" + `url(${this.imgURL})`;
-    },
-  },
+    }
+  }
 };
 </script>
 <style>

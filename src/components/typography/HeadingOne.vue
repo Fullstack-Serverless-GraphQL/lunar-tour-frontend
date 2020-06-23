@@ -7,7 +7,7 @@
 export default {
   name: "HeadingOne",
   props: {
-    text: String,
-  },
+    text: String
+  }
 };
 </script>

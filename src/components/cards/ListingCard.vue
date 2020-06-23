@@ -20,7 +20,7 @@ export default {
     listingLocation: String,
     price: String,
     rating: Number,
-    coverPhoto: String,
-  },
+    coverPhoto: String
+  }
 };
 </script>

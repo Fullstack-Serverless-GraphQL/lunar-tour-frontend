@@ -18,17 +18,17 @@
 export default {
   name: "Input",
   props: {
-    placeholder: String,
+    placeholder: String
   },
   data() {
     return {
-      value: "",
+      value: ""
     };
   },
   methods: {
     handleInput(e) {
       this.$emit("input", e.target.value);
-    },
-  },
+    }
+  }
 };
 </script>

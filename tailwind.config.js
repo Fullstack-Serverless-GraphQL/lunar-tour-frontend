@@ -34,7 +34,7 @@ module.exports = {
       "blue-dark": "#26A5D7",
       blue: "#56CBF9",
       "blue-light": "#9DE3FF",
-      "blue-lightest": "#A6E5FE",
+      "blue-lightest": "#A6E5FE"
     },
     screens: {
       s: "320px",
@@ -47,10 +47,10 @@ module.exports = {
       lg: "992px",
       x: "1024px",
       lapie: [{ min: "1280px", max: "1366px" }],
-      xl: [{ min: "1500px" }],
+      xl: [{ min: "1500px" }]
     },
     fontFamily: {
-      display: ["Saira"],
+      display: ["Saira"]
     },
     fontSize: {
       xs: ".75rem", // 12px
@@ -62,7 +62,7 @@ module.exports = {
       "3xl": "1.875rem", // 30px
       "4xl": "2.25rem", // 36px
       "5xl": "3rem",
-      "7xl": "5rem", // 48px
+      "7xl": "5rem" // 48px
     },
     fontWeight: {
       hairline: 100,
@@ -73,31 +73,31 @@ module.exports = {
       semibold: 600,
       bold: 700,
       extrabold: 800,
-      black: 900,
+      black: 900
     },
     leading: {
       none: 1,
       tight: 1.25,
       normal: 1.5,
-      loose: 2,
+      loose: 2
     },
-    textColors: (theme) => theme("colors"),
-    backgroundColors: (theme) => theme("colors"),
+    textColors: theme => theme("colors"),
+    backgroundColors: theme => theme("colors"),
     backgroundSize: {
       auto: "auto",
       cover: "cover",
-      contain: "contain",
+      contain: "contain"
     },
     borderWidths: {
       default: "1px",
       "0": "0",
       "2": "2px",
       "4": "4px",
-      "8": "8px",
+      "8": "8px"
     },
     borderColors: global.Object.assign(
-      { default: (theme) => theme(colors["grey-light"]) },
-      (theme) => theme("colors")
+      { default: theme => theme(colors["grey-light"]) },
+      theme => theme("colors")
     ),
     borderRadius: {
       none: "0",
@@ -108,7 +108,7 @@ module.exports = {
       lg: "25px",
       full: "9999px",
       "header-border": "0px 0px 220px 220px",
-      "header-border-sm": "0px 0px 120px 120px",
+      "header-border-sm": "0px 0px 120px 120px"
     },
     width: {
       auto: "auto",
@@ -149,7 +149,7 @@ module.exports = {
       "700": "700px",
       "750": "750px",
       "800": "800px",
-      card: "264px",
+      card: "264px"
     },
     height: {
       card: "364px",
@@ -187,7 +187,7 @@ module.exports = {
       "650": "650px",
       "750": "750px",
       "800": "800px",
-      imgHeader: "570px",
+      imgHeader: "570px"
     },
     padding: {
       px: "1px",
@@ -206,7 +206,7 @@ module.exports = {
       "24": "6rem",
       "32": "8rem",
       "38": "16rem",
-      "44": "20rem",
+      "44": "20rem"
     },
     margin: {
       auto: "auto",
@@ -226,7 +226,7 @@ module.exports = {
       "24": "6rem",
       "32": "8rem",
       "40": "40%",
-      imgHeader: "-85px",
+      imgHeader: "-85px"
     },
     boxShadow: {
       default: "0px 4px 4px  rgba(0,0,0,0.25)",
@@ -235,7 +235,7 @@ module.exports = {
       inner: "inset 0 2px 4px 0 rgba(0,0,0,0.06)",
       outline: "0 0 0 3px rgba(52,144,220,0.5)",
       "lg-card": "0px 6px 12px rgba(0, 0, 0, 0.1);",
-      none: "none",
+      none: "none"
     },
     cursor: {
       auto: "auto",
@@ -244,12 +244,12 @@ module.exports = {
       wait: "wait",
       text: "text",
       move: "move",
-      "not-allowed": "not-allowed",
+      "not-allowed": "not-allowed"
     },
     zIndex: {
-      "100": 100,
+      "100": 100
     },
-    gap: (theme) => theme("spacing"),
+    gap: theme => theme("spacing"),
     gridTemplateColumns: {
       none: "none",
       "0": "1fr 1fr",
@@ -264,7 +264,7 @@ module.exports = {
       "9": "repeat(9, minmax(0, 1fr))",
       "10": "repeat(10, minmax(0, 1fr))",
       "11": "repeat(11, minmax(0, 1fr))",
-      "12": "repeat(12, minmax(0, 1fr))",
+      "12": "repeat(12, minmax(0, 1fr))"
     },
     gridColumn: {
       auto: "auto",
@@ -279,7 +279,7 @@ module.exports = {
       "span-9": "span 9 / span 9",
       "span-10": "span 10 / span 10",
       "span-11": "span 11 / span 11",
-      "span-12": "span 12 / span 12",
+      "span-12": "span 12 / span 12"
     },
     gridColumnStart: {
       auto: "auto",
@@ -295,7 +295,7 @@ module.exports = {
       "10": "10",
       "11": "11",
       "12": "12",
-      "13": "13",
+      "13": "13"
     },
     gridColumnEnd: {
       auto: "auto",
@@ -311,7 +311,7 @@ module.exports = {
       "10": "10",
       "11": "11",
       "12": "12",
-      "13": "13",
+      "13": "13"
     },
     gridTemplateRows: {
       none: "none",
@@ -320,7 +320,7 @@ module.exports = {
       "3": "repeat(3, minmax(0, 1fr))",
       "4": "repeat(4, minmax(0, 1fr))",
       "5": "repeat(5, minmax(0, 1fr))",
-      "6": "repeat(6, minmax(0, 1fr))",
+      "6": "repeat(6, minmax(0, 1fr))"
     },
     gridRow: {
       auto: "auto",
@@ -329,7 +329,7 @@ module.exports = {
       "span-3": "span 3 / span 3",
       "span-4": "span 4 / span 4",
       "span-5": "span 5 / span 5",
-      "span-6": "span 6 / span 6",
+      "span-6": "span 6 / span 6"
     },
     gridRowStart: {
       auto: "auto",
@@ -339,7 +339,7 @@ module.exports = {
       "4": "4",
       "5": "5",
       "6": "6",
-      "7": "7",
+      "7": "7"
     },
     gridRowEnd: {
       auto: "auto",
@@ -349,11 +349,11 @@ module.exports = {
       "4": "4",
       "5": "5",
       "6": "6",
-      "7": "7",
+      "7": "7"
     },
     backgroundPosition: {
-      center: "center center",
-    },
+      center: "center center"
+    }
   },
   variants: {
     accessibility: ["responsive", "focus"],
@@ -420,23 +420,23 @@ module.exports = {
     whitespace: ["responsive"],
     width: ["responsive"],
     wordBreak: ["responsive"],
-    zIndex: ["responsive"],
+    zIndex: ["responsive"]
   },
   plugins: [
     function({ addComponents }) {
       const border = {
         ".border-top": {
-          borderTop: "#F45B69  8px solid",
-        },
+          borderTop: "#F45B69  8px solid"
+        }
       };
       const borderBottom = {
         ".border-bottom": {
-          borderBottom: "#F45B69  8px solid",
-        },
+          borderBottom: "#F45B69  8px solid"
+        }
       };
 
       addComponents(borderBottom);
       addComponents(border);
-    },
-  ],
+    }
+  ]
 };

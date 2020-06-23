@@ -18,13 +18,13 @@ export default {
   name: "RedBlockButton",
   props: {
     text: String,
-    isLoading: Boolean,
+    isLoading: Boolean
   },
   methods: {
     handleClick(evt) {
       this.$emit("click", evt);
-    },
-  },
+    }
+  }
 };
 </script>
 <style>
