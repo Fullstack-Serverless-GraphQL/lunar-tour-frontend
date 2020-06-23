@@ -8,41 +8,7 @@
       </div>
 
       <p class="font-display text-lg mt-8">${{ price }}</p>
-      <div v-if="rating === 5">
-        <div class="flex flex-row">
-          <img src="../../assets/star.svg" />
-          <img src="../../assets/star.svg" />
-          <img src="../../assets/star.svg" />
-          <img src="../../assets/star.svg" />
-          <img src="../../assets/star.svg" />
-        </div>
-      </div>
-      <div v-if="rating === 4">
-        <div class="flex flex-row">
-          <img src="../../assets/star.svg" />
-          <img src="../../assets/star.svg" />
-          <img src="../../assets/star.svg" />
-          <img src="../../assets/star.svg" />
-        </div>
-      </div>
-      <div v-if="rating === 3">
-        <div class="flex flex-row">
-          <img src="../../assets/star.svg" />
-          <img src="../../assets/star.svg" />
-          <img src="../../assets/star.svg" />
-        </div>
-      </div>
-      <div v-if="rating === 2">
-        <div class="flex flex-row">
-          <img src="../../assets/star.svg" />
-          <img src="../../assets/star.svg" />
-        </div>
-      </div>
-      <div v-if="rating === 1">
-        <div class="flex flex-row">
-          <img src="../../assets/star.svg" />
-        </div>
-      </div>
+      <a-rate value="value" disabled="true" />
     </div>
   </div>
 </template>
