@@ -8,7 +8,11 @@
       </div>
 
       <p class="font-display text-lg mt-8">${{ price }}</p>
-      <star-rating :rating="rating" :max-rating="rating"></star-rating>
+      <star-rating
+        :rating="rating"
+        read-only
+        :show-rating="false"
+      ></star-rating>
     </div>
   </div>
 </template>
