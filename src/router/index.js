@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-
+import { Rate } from "ant-design-vue";
 Vue.use(VueRouter);
 
 const routes = [
