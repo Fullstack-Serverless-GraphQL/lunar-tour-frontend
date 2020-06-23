@@ -1,0 +1,10 @@
+query GetAllListings {
+  getAllListings {
+    listingId
+    coverPhoto
+    listingName
+    listingLocation
+    rating
+    price
+  }
+}
