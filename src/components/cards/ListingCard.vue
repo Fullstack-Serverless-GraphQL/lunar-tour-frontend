@@ -8,13 +8,14 @@
       </div>
 
       <p class="font-display text-lg mt-8">${{ price }}</p>
-      <a-rate :default-value="2" disabled />
+      <star-rating :rating="rating" :max-rating="rating"></star-rating>
     </div>
   </div>
 </template>
 <script>
 export default {
   name: "ListingCard",
+
   props: {
     listingTitle: String,
     listingLocation: String,
