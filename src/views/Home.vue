@@ -37,8 +37,8 @@
   </div>
 </template>
 <script>
-import LandingHeader from "../components/headers/LandingHeader.vue";
-import TourCard from "../components/cards/TourCard";
+import LandingHeader from "../components/navs/LandingHeader.vue";
+import TourCard from "../components/cards/ListingCard";
 export default {
   name: "Home",
   components: {
