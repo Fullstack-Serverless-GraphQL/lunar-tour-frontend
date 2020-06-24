@@ -1,0 +1,30 @@
+mutation MAKE_A_BOOKING(
+  $size: Int
+  $customerEmail: String
+  $bookingDate: String
+  $listingId: String
+  $customers: [InputCustomer]
+) {
+  makeABooking(
+    size: $size
+    customerEmail: $customerEmail
+    bookingDate: $bookingDate
+    listingId: $listingId
+    customers: $customers
+  ) {
+    ID
+    listingID
+    bookingDate
+    size
+    bookingTotal
+    customerEmail
+    customers {
+      name
+      Surname
+      country
+      passportNumber
+      physioScore
+    }
+    chargeReciept
+  }
+}
