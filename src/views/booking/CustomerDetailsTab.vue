@@ -7,17 +7,17 @@
       <BodyOne>
         Booking date
       </BodyOne>
-      <Input placeholder="date" type="date" v-model="tempMesg" />
+      <Input placeholder="date" type="date" v-model="date" />
     </div>
     <div class="mt-5">
       <BodyOne>
         Number of people
       </BodyOne>
-      <Input placeholder="3" type="number" :value="number" />
+      <Input placeholder="3" type="number" v-model="number" />
     </div>
     <div class="mt-5">
       <BodyOne> Email address </BodyOne>
-      <Input placeholder="doku@corrisant.io" type="email" :value="email" />
+      <Input placeholder="doku@corrisant.io" type="email" v-model="email" />
     </div>
     <div class="flex lg:flex-row mt-5 s:flex-col">
       <RedBlockButton
@@ -51,17 +51,15 @@ export default {
   },
   data() {
     return {
-      tempMesg: "",
+      date: "",
+      number: "",
+      email: "",
     };
   },
-  props: {
-    date: String,
-    number: String,
-    email: String,
-  },
+
   methods: {
     submit() {
-      this.$emit("inputData", this.tempMesg);
+      this.$emit("inputData", this.email, this.date, this.number);
     },
   },
 };

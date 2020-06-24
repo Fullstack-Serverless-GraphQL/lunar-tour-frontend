@@ -69,10 +69,12 @@ export default {
     removeCustomer(i) {
       this.customers.splice(i, 1);
     },
-    showData(variable) {
-      console.log(this.variable);
-      this.test = variable;
-      alert(` ${this.test}`);
+    showData(variable, date, number) {
+      console.log(variable);
+      this.email = variable;
+      this.date = date;
+      this.number = number;
+      alert(` ${this.email} ${this.date} ${this.number}`);
     },
   },
 };
