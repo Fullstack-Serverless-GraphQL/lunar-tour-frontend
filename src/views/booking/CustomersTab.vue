@@ -30,7 +30,16 @@
   </div>
 </template>
 <script>
+import HeadingOne from "../../../components/typography/HeadingOne";
+
+import RedBlockButton from "../../../components/buttons/RedBlockButton";
+import RedOutlineButton from "../../../components/buttons/RedOutlineButton";
 export default {
   name: "CustomersTab",
+  components: {
+    HeadingOne,
+    RedBlockButton,
+    RedOutlineButton,
+  },
 };
 </script>
