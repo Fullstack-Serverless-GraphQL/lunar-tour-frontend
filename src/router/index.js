@@ -2,6 +2,8 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Listing from "../views/Listing.vue";
+import Index from "./pages/booking";
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -13,6 +15,10 @@ const routes = [
   {
     path: "/listing/:id",
     component: Listing,
+  },
+  {
+    path: "/booking/:id",
+    component: Index,
   },
 ];
 
