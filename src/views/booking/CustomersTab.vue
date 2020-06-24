@@ -80,5 +80,29 @@ export default {
     RemoveButton,
     BlueBlockButton,
   },
+  data() {
+    return {
+      activeKey: "1",
+      email: "",
+      number: "",
+      date: "",
+      customers: [],
+      test: "",
+    };
+  },
+  methods: {
+    addCustomer() {
+      // const o = [...this.customers];
+      this.customers.push({
+        name: null,
+        Surname: null,
+      });
+      // this.customers.push({ o });
+      // console.log(this.customers);
+    },
+    removeCustomer(i) {
+      this.customers.splice(i, 1);
+    },
+  },
 };
 </script>
