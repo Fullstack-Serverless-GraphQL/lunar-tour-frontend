@@ -1,0 +1,23 @@
+query GetAListing($listingId: String!) {
+  getAListing(listingId: $listingId) {
+    coverPhoto
+    listingId
+    listingName
+    listingType {
+      name
+    }
+    listingLocation
+    listingActivities {
+      name
+    }
+    listingDescription
+    price
+    numberOfDays
+    guide {
+      Bio
+      Name
+      Avatar
+    }
+    specialType
+  }
+}
