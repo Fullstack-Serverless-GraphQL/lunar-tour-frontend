@@ -7,7 +7,7 @@
           :email="email"
           :date="date"
           :number="number"
-          v-on:showData="submitForm"
+          @inputData="showData"
         />
       </a-tab-pane>
 
@@ -50,6 +50,7 @@ export default {
       number: "",
       date: "",
       customers: [],
+      test: "",
     };
   },
   methods: {
@@ -68,9 +69,10 @@ export default {
     removeCustomer(i) {
       this.customers.splice(i, 1);
     },
-    submitForm() {
-      console.log(this.date);
-      alert(` ${this.email}, ${this.number}, ${this.date}`);
+    showData(variable) {
+      console.log(this.variable);
+      this.test = variable;
+      alert(` ${this.test}`);
     },
   },
 };

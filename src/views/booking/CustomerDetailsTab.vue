@@ -7,7 +7,7 @@
       <BodyOne>
         Booking date
       </BodyOne>
-      <Input placeholder="date" type="date" :value="date" />
+      <Input placeholder="date" type="date" v-model="tempMesg" />
     </div>
     <div class="mt-5">
       <BodyOne>
@@ -26,7 +26,7 @@
         class="mr-5 s:mb-5 lg:mb-0"
       />
       <RedBlockButton
-        @click="$emit('showData', email, number, date)"
+        @click="submit()"
         text="show data"
         class="mr-5 s:mb-5 lg:mb-0"
       />
@@ -49,10 +49,20 @@ export default {
     BodyOne,
     Input,
   },
+  data() {
+    return {
+      tempMesg: "",
+    };
+  },
   props: {
     date: String,
     number: String,
     email: String,
+  },
+  methods: {
+    submit() {
+      this.$emit("inputData", this.tempMesg);
+    },
   },
 };
 </script>
