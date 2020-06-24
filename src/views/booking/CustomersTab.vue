@@ -7,7 +7,7 @@
       <BodyOne>
         Booking date
       </BodyOne>
-      <DateInput placeholder="date" type="date" v-model="date" />
+      <Input placeholder="date" type="date" v-model="date" />
     </div>
     <div class="mt-5">
       <BodyOne>
@@ -30,16 +30,20 @@
   </div>
 </template>
 <script>
-import HeadingOne from "../../../components/typography/HeadingOne";
+import HeadingOne from "../../components/typography/HeadingOne";
+import BodyOne from "../../components/typography/BodyOne";
+import Input from "../../components/inputs/Input";
 
-import RedBlockButton from "../../../components/buttons/RedBlockButton";
-import RedOutlineButton from "../../../components/buttons/RedOutlineButton";
+import RedBlockButton from "../../components/buttons/RedBlockButton";
+import RedOutlineButton from "../../components/buttons/RedOutlineButton";
 export default {
   name: "CustomersTab",
   components: {
     HeadingOne,
     RedBlockButton,
     RedOutlineButton,
+    BodyOne,
+    Input,
   },
 };
 </script>
