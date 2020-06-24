@@ -95,7 +95,7 @@
   </div>
 </template>
 <script>
-import LandingHeader from "../components/headers/LandingHeader";
+import LandingHeader from "../components/navs/LandingHeader";
 import RedBlockButton from "../components/buttons/RedBlockButton";
 export default {
   name: "Listing",

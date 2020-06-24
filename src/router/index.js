@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import Listing from "./pages/Listing";
+import Listing from "../views/Listing";
 Vue.use(VueRouter);
 
 const routes = [
