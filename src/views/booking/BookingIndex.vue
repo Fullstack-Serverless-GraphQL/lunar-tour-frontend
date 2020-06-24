@@ -2,7 +2,7 @@
   <div>
     <a-tabs v-model="activeKey">
       <a-tab-pane tab="Tab 1" key="1" class="flex justify-center">
-        <CustomersTab />
+        <CustomersTab v-on:goNext="next" />
       </a-tab-pane>
 
       <!-- TAB ONE  END--->
