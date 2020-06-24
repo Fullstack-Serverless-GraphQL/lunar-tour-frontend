@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col p-20 ">
     <HeadingOne>
-      Who are you travelling with?Who are you travelling with?
+      Who are you travelling with?
     </HeadingOne>
     <div
       class="flex lg:flex-row s:flex-col mt-10"
@@ -66,6 +66,7 @@ import BodyOne from "../../components/typography/BodyOne";
 import Input from "../../components/inputs/Input";
 import RedBlockButton from "../../components/buttons/RedBlockButton";
 import RedOutlineButton from "../../components/buttons/RedOutlineButton";
+import RemoveButton from "../../components/buttons/RemoveButton";
 export default {
   name: "CustomerTab",
   components: {
@@ -74,6 +75,7 @@ export default {
     RedOutlineButton,
     BodyOne,
     Input,
+    RemoveButton,
   },
 };
 </script>
