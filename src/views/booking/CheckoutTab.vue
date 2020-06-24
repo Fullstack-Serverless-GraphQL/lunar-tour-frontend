@@ -25,7 +25,7 @@
         text="Pay"
         class="mr-5"
       />
-      <RedOutlineButton @click="next(2)" text="Back" />
+      <RedOutlineButton @click="$emit('goNext', 2)" text="Back" />
     </div>
   </div>
 </template>
@@ -35,14 +35,28 @@ import HeadingOne from "../../components/typography/HeadingOne";
 import BodyOne from "../../components/typography/BodyOne";
 import RedBlockButton from "../../components/buttons/RedBlockButton";
 import RedOutlineButton from "../../components/buttons/RedOutlineButton";
+import { Card, createToken } from "vue-stripe-elements-plus";
 
 export default {
-  name: "CustomerTab",
+  name: "CheckoutTab",
   components: {
     HeadingOne,
     RedBlockButton,
     RedOutlineButton,
     BodyOne,
+    Card,
   },
 };
 </script>
+<style>
+.stripe-card {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  box-shadow: 0px 1px 3px rgba(230, 235, 241, 0.25);
+  border-radius: 4px;
+}
+.stripe-card.complete {
+  border-color: green;
+}
+</style>

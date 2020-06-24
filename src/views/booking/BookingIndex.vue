@@ -16,7 +16,7 @@
       <!-- TAB THREE --->
 
       <a-tab-pane tab="Tab 3" key="3" class="text-black flex justify-center">
-        <p>tab3</p>
+        <CheckoutTab v-on:goNext="next" />
       </a-tab-pane>
       <!-- TAB THREE END--->
       <!-- TAB FOUR --->
@@ -32,10 +32,10 @@
 <script>
 import CustomersTab from "./CustomersTab";
 import CustomerDetailsTab from "./CustomerDetailsTab";
-
+import CheckoutTab from "./CheckoutTab";
 export default {
   name: "BookingIndex",
-  components: { CustomersTab, CustomerDetailsTab },
+  components: { CustomersTab, CustomerDetailsTab, CheckoutTab },
   data() {
     return {
       activeKey: "1",
