@@ -1,12 +1,15 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
-import "./assets/tailwind.css";
+import { Tabs } from "ant-design-vue";
 import StarRating from "vue-star-rating";
+import { createProvider } from "./vue-apollo";
+
+import "./assets/tailwind.css";
 import "ant-design-vue/dist/antd.css";
 
-import { createProvider } from "./vue-apollo";
 Vue.config.productionTip = false;
+Vue.use(Tabs);
 
 Vue.component("star-rating", StarRating);
 new Vue({
