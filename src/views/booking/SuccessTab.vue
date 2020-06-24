@@ -17,3 +17,16 @@
     </div>
   </div>
 </template>
+<script>
+import HeadingOne from "../../components/typography/HeadingOne";
+import BodyOne from "../../components/typography/BodyOne";
+import RedBlockButton from "../../components/buttons/RedBlockButton";
+export default {
+  name: "SuccessTab",
+  components: {
+    HeadingOne,
+    RedBlockButton,
+    BodyOne,
+  },
+};
+</script>
