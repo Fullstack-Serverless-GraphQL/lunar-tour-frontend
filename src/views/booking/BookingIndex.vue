@@ -2,7 +2,13 @@
   <div>
     <a-tabs v-model="activeKey">
       <a-tab-pane tab="Tab 1" key="1" class="flex justify-center">
-        <CustomerDetailsTab v-on:goNext="next" />
+        <CustomerDetailsTab
+          v-on:goNext="next"
+          :email="email"
+          :date="date"
+          :number="number"
+          v-on:showData="submitForm"
+        />
       </a-tab-pane>
 
       <!-- TAB ONE  END--->
@@ -64,9 +70,7 @@ export default {
     },
     submitForm() {
       console.log(this.date);
-      alert(
-        `${this.customers[0].customerName}, ${this.email}, ${this.number}, ${this.date}`
-      );
+      alert(` ${this.email}, ${this.number}, ${this.date}`);
     },
   },
 };

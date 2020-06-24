@@ -7,22 +7,27 @@
       <BodyOne>
         Booking date
       </BodyOne>
-      <Input placeholder="date" type="date" v-model="date" />
+      <Input placeholder="date" type="date" :value="date" />
     </div>
     <div class="mt-5">
       <BodyOne>
         Number of people
       </BodyOne>
-      <Input placeholder="3" type="number" v-model="number" />
+      <Input placeholder="3" type="number" :value="number" />
     </div>
     <div class="mt-5">
       <BodyOne> Email address </BodyOne>
-      <Input placeholder="doku@corrisant.io" type="email" v-model="email" />
+      <Input placeholder="doku@corrisant.io" type="email" :value="email" />
     </div>
     <div class="flex lg:flex-row mt-5 s:flex-col">
       <RedBlockButton
         @click="$emit('goNext', 2)"
         text="Proceed"
+        class="mr-5 s:mb-5 lg:mb-0"
+      />
+      <RedBlockButton
+        @click="$emit('showData', email, number, date)"
+        text="show data"
         class="mr-5 s:mb-5 lg:mb-0"
       />
       <RedOutlineButton @click="$router.push('/')" text="Cancel" />
@@ -43,6 +48,11 @@ export default {
     RedOutlineButton,
     BodyOne,
     Input,
+  },
+  props: {
+    date: String,
+    number: String,
+    email: String,
   },
 };
 </script>
