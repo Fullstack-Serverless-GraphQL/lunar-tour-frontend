@@ -2,7 +2,7 @@
   <div>
     <a-tabs v-model="activeKey">
       <a-tab-pane tab="Tab 1" key="1" class="flex justify-center">
-        <CustomersTab v-on:goNext="next" />
+        <CustomerDetailsTab v-on:goNext="next" />
       </a-tab-pane>
 
       <!-- TAB ONE  END--->
@@ -10,7 +10,7 @@
       <!-- TAB TWO --->
 
       <a-tab-pane tab="Tab 2" key="2" class="flex justify-center">
-        <p>tab2</p>
+        <CustomersTab v-on:goNext="next" />
       </a-tab-pane>
       <!-- TAB TWO  END--->
       <!-- TAB THREE --->
@@ -31,9 +31,11 @@
 
 <script>
 import CustomersTab from "./CustomersTab";
+import CustomerDetailsTab from "./CustomerDetailsTab";
+
 export default {
   name: "BookingIndex",
-  components: { CustomersTab },
+  components: { CustomersTab, CustomerDetailsTab },
   data() {
     return {
       activeKey: "1",

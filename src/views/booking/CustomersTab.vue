@@ -52,11 +52,28 @@
     </div>
     <div class="flex lg:flex-row mt-5 s:flex-col">
       <RedBlockButton
-        @click="next(3)"
+        @click="$emit('goNext', 3)"
         text="Proceed"
         class="mr-5 s:mb-5  lg:mb-0"
       />
-      <RedOutlineButton @click="next(1)" text="Back" />
+      <RedOutlineButton @click="$emit('goNext', 1)" text="Back" />
     </div>
   </div>
 </template>
+<script>
+import HeadingOne from "../../components/typography/HeadingOne";
+import BodyOne from "../../components/typography/BodyOne";
+import Input from "../../components/inputs/Input";
+import RedBlockButton from "../../components/buttons/RedBlockButton";
+import RedOutlineButton from "../../components/buttons/RedOutlineButton";
+export default {
+  name: "CustomerTab",
+  components: {
+    HeadingOne,
+    RedBlockButton,
+    RedOutlineButton,
+    BodyOne,
+    Input,
+  },
+};
+</script>
