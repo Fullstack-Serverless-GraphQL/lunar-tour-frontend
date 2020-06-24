@@ -40,11 +40,33 @@ export default {
   data() {
     return {
       activeKey: "1",
+      email: "",
+      number: "",
+      date: "",
+      customers: [],
     };
   },
   methods: {
     next(k) {
       this.activeKey = k.toString();
+    },
+    addCustomer() {
+      // const o = [...this.customers];
+      this.customers.push({
+        name: null,
+        Surname: null,
+      });
+      // this.customers.push({ o });
+      // console.log(this.customers);
+    },
+    removeCustomer(i) {
+      this.customers.splice(i, 1);
+    },
+    submitForm() {
+      console.log(this.date);
+      alert(
+        `${this.customers[0].customerName}, ${this.email}, ${this.number}, ${this.date}`
+      );
     },
   },
 };
