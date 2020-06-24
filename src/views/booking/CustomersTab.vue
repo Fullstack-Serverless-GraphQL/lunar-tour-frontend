@@ -67,6 +67,8 @@ import Input from "../../components/inputs/Input";
 import RedBlockButton from "../../components/buttons/RedBlockButton";
 import RedOutlineButton from "../../components/buttons/RedOutlineButton";
 import RemoveButton from "../../components/buttons/RemoveButton";
+import BlueBlockButton from "../../components/buttons/BlueBlockButton";
+
 export default {
   name: "CustomerTab",
   components: {
@@ -76,6 +78,7 @@ export default {
     BodyOne,
     Input,
     RemoveButton,
+    BlueBlockButton,
   },
 };
 </script>
