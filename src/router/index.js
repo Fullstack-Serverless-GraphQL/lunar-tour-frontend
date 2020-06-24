@@ -2,7 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Listing from "../views/Listing.vue";
-import Index from "./pages/booking";
+import BookingIndex from "../views/booking/BookingIndex";
 
 Vue.use(VueRouter);
 
@@ -18,7 +18,7 @@ const routes = [
   },
   {
     path: "/booking/:id",
-    component: Index,
+    component: BookingIndex,
   },
 ];
 
