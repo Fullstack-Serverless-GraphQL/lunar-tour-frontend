@@ -7,7 +7,7 @@
       Test using this credit card: 4242 4242 4242 4242, and enter any 5 digits
       for the zip code</BodyOne
     >
-    <card
+    <Card
       class="stripe-card mt-20 w-full"
       id="card"
       :class="{ complete }"
@@ -35,7 +35,7 @@ import HeadingOne from "../../components/typography/HeadingOne";
 import BodyOne from "../../components/typography/BodyOne";
 import RedBlockButton from "../../components/buttons/RedBlockButton";
 import RedOutlineButton from "../../components/buttons/RedOutlineButton";
-import { Card, createToken } from "vue-stripe-elements-plus";
+import { Card } from "vue-stripe-elements-plus";
 
 export default {
   name: "CheckoutTab",
