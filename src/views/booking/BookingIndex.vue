@@ -22,7 +22,7 @@
       <!-- TAB FOUR --->
 
       <a-tab-pane tab="Tab 4" key="4" class="text-black flex justify-center">
-        <p>tab4</p>
+        <SuccessTab />
       </a-tab-pane>
       <!-- TAB FOUR END--->
     </a-tabs>
@@ -32,10 +32,11 @@
 <script>
 import CustomersTab from "./CustomersTab";
 import CustomerDetailsTab from "./CustomerDetailsTab";
+import SuccessTab from "./SuccessTab";
 import CheckoutTab from "./CheckoutTab";
 export default {
   name: "BookingIndex",
-  components: { CustomersTab, CustomerDetailsTab, CheckoutTab },
+  components: { CustomersTab, CustomerDetailsTab, CheckoutTab, SuccessTab },
   data() {
     return {
       activeKey: "1",
