@@ -110,7 +110,7 @@ export default {
   },
   watch: {
     name() {
-      this.$emit("input", this.customers);
+      this.$emit("event", this.customers);
     },
   },
 };

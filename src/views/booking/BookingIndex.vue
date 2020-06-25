@@ -4,9 +4,10 @@
       <a-tab-pane tab="Tab 1" key="1" class="flex justify-center">
         <CustomerDetailsTab
           v-on:goNext="next"
-          @input="
-            (newEmail, newNumber, newDate) => {
-              (email = newEmail), (number = newNumber), (date = newDate);
+          :personal="personal"
+          @event="
+            (newPersonal) => {
+              personal = newPersonal;
             }
           "
         />
@@ -19,9 +20,9 @@
       <a-tab-pane tab="Tab 2" key="2" class="flex justify-center">
         <CustomersTab
           v-on:goNext="next"
-          @input="
-            (newCustomers) => {
-              customers = newCustomers;
+          @event="
+            (cus) => {
+              customers = cus;
             }
           "
           @inputData="showData"
@@ -55,9 +56,11 @@ export default {
   data() {
     return {
       activeKey: "1",
-      email: "",
-      number: "",
-      date: "",
+      personal: {
+        date: "",
+        email: "",
+        number: "",
+      },
       customers: [],
       test: "",
     };
@@ -79,7 +82,9 @@ export default {
       this.customers.splice(i, 1);
     },
     showData() {
-      alert(` ${this.email} ${this.date} ${this.number} ${this.customers}`);
+      alert(
+        ` ${this.personal.date}${this.personal.number} ${this.personal.email}  ${this.customers[0]}`
+      );
     },
   },
 };

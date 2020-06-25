@@ -7,17 +7,21 @@
       <BodyOne>
         Booking date
       </BodyOne>
-      <Input placeholder="date" type="date" v-model="date" />
+      <Input placeholder="date" type="date" v-model="personal.date" />
     </div>
     <div class="mt-5">
       <BodyOne>
         Number of people
       </BodyOne>
-      <Input placeholder="3" type="number" v-model="number" />
+      <Input placeholder="3" type="number" v-model="personal.number" />
     </div>
     <div class="mt-5">
       <BodyOne> Email address </BodyOne>
-      <Input placeholder="doku@corrisant.io" type="email" v-model="email" />
+      <Input
+        placeholder="doku@corrisant.io"
+        type="email"
+        v-model="personal.email"
+      />
     </div>
     <div class="flex lg:flex-row mt-5 s:flex-col">
       <RedBlockButton
@@ -45,23 +49,13 @@ export default {
     BodyOne,
     Input,
   },
-  data() {
-    return {
-      date: "",
-      number: "",
-      email: "",
-    };
+  props: {
+    personal: Object,
   },
 
   watch: {
-    date() {
-      this.$emit("input", this.date);
-    },
-    number() {
-      this.$emit("input", this.number);
-    },
-    email() {
-      this.$emit("input", this.email);
+    personal() {
+      this.$emit("event", this.personal);
     },
   },
 };
