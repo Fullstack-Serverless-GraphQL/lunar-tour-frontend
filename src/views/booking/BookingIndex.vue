@@ -45,7 +45,7 @@
       <!-- TAB FOUR --->
 
       <a-tab-pane tab="Tab 4" key="4" class="text-black flex justify-center">
-        <SuccessTab />
+        <SuccessTab :bookingData="mutationObject" />
       </a-tab-pane>
       <!-- TAB FOUR END--->
     </a-tabs>
@@ -71,6 +71,7 @@ export default {
       isLoading: false,
       hasError: false,
       showError: "",
+      mutationObject: {},
     };
   },
   methods: {
@@ -98,6 +99,7 @@ export default {
         .then((data) => {
           console.log(data);
           this.isLoading = false;
+          this.mutationObject = data.makeABooking;
         })
         .catch((error) => {
           console.log(error);

@@ -8,6 +8,7 @@
       >Your link to your ticket is in the mail. Keep it safe and we will see you
       soon</BodyOne
     >
+    <BodyOne class="mt-5">{{ bookingData.bookingId }}</BodyOne>
     <div class="flex flex-row ml-32 mt-20">
       <RedBlockButton
         @click="$router.push('/')"
@@ -27,6 +28,9 @@ export default {
     HeadingOne,
     RedBlockButton,
     BodyOne,
+  },
+  props: {
+    bookingData: Object,
   },
 };
 </script>
