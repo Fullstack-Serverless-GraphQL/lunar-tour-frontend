@@ -7,7 +7,7 @@
       Test using this credit card: 4242 4242 4242 4242, and enter any 5 digits
       for the zip code</BodyOne
     >
-    <Card
+    <card
       class="stripe-card mt-20 w-full"
       id="card"
       :class="{ complete }"
