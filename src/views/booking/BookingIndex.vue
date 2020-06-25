@@ -20,6 +20,7 @@
       <a-tab-pane tab="Tab 2" key="2" class="flex justify-center">
         <CustomersTab
           v-on:goNext="next"
+          :customers="customers"
           @event="
             (cus) => {
               customers = cus;
@@ -69,21 +70,10 @@ export default {
     next(k) {
       this.activeKey = k.toString();
     },
-    addCustomer() {
-      // const o = [...this.customers];
-      this.customers.push({
-        name: null,
-        Surname: null,
-      });
-      // this.customers.push({ o });
-      // console.log(this.customers);
-    },
-    removeCustomer(i) {
-      this.customers.splice(i, 1);
-    },
     showData() {
+      console.log(this.customers);
       alert(
-        ` ${this.personal.date}${this.personal.number} ${this.personal.email}  ${this.customers[0]}`
+        ` ${this.personal.date}${this.personal.number} ${this.personal.email}  ${this.customers[0].name}`
       );
     },
   },

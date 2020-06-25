@@ -34,7 +34,7 @@
         <Input
           placeholder="doku@corrisant.io"
           type="email"
-          v-model="customer.Surname"
+          v-model="customer.surname"
         />
         <label> </label>
         <input />
@@ -85,18 +85,15 @@ export default {
     RemoveButton,
     BlueBlockButton,
   },
-  data() {
-    return {
-      activeKey: "1",
-      customers: [],
-    };
+  props: {
+    customers: Array,
   },
   methods: {
     addCustomer() {
       // const o = [...this.customers];
       this.customers.push({
         name: null,
-        Surname: null,
+        surname: null,
       });
       // this.customers.push({ o });
       // console.log(this.customers);
