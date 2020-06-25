@@ -10,6 +10,9 @@
     >
     <div>
       <img src="../../assets/confirmation_number.svg" />
+      <a class="text-yellow font-display" :href="bookingData.chargeReciept"
+        >Tickets</a
+      >
     </div>
     <div class="flex flex-row ml-32 mt-20">
       <RedBlockButton
