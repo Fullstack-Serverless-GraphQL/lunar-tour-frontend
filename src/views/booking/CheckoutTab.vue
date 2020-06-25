@@ -11,7 +11,7 @@
       class="stripe-card mt-20 w-full"
       id="card"
       :class="{ complete }"
-      stripe="pk_test_5ThYi0UvX3xwoNdgxxxTxxrG"
+      stripe="pk_test_IQEA1vOcYdHCZWvmHTZkeTt3"
       :options="stripeOptions"
     />
     <BodyOne v-if="error"> {{ error }}</BodyOne>
@@ -35,7 +35,7 @@ import HeadingOne from "../../components/typography/HeadingOne";
 import BodyOne from "../../components/typography/BodyOne";
 import RedBlockButton from "../../components/buttons/RedBlockButton";
 import RedOutlineButton from "../../components/buttons/RedOutlineButton";
-import { Card } from "vue-stripe-elements-plus";
+import { Card, createToken } from "vue-stripe-elements-plus";
 
 export default {
   name: "CheckoutTab",
@@ -49,6 +49,9 @@ export default {
   methods: {
     submitBooking() {
       this.$emit("makeBooking");
+    },
+    pay() {
+      createToken().then((data) => console.log(data.token));
     },
   },
 };

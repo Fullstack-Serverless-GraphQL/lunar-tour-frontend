@@ -63,7 +63,9 @@ export default {
         number: "",
       },
       customers: [],
-      test: "",
+      isLoading: false,
+      hasError: false,
+      showError: "",
     };
   },
   methods: {
@@ -77,6 +79,7 @@ export default {
       );
     },
     mutate() {
+      this.isLoading = true;
       this.$apollo
         .mutate({
           mutation: require("../../graphql/makeABooking.gql"),
@@ -89,8 +92,14 @@ export default {
         })
         .then((data) => {
           console.log(data);
+          this.isLoading = false;
         })
-        .catch((error) => console.log(error));
+        .catch((error) => {
+          console.log(error);
+          this.isLoading = false;
+          this.hasError = false;
+          this.showError = error;
+        });
     },
   },
 };
