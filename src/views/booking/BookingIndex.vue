@@ -99,7 +99,7 @@ export default {
         .then((data) => {
           console.log(data);
           this.isLoading = false;
-          this.mutationObject = data.makeABooking;
+          this.mutationObject = data.data.makeABooking;
         })
         .catch((error) => {
           console.log(error);
