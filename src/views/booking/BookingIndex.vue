@@ -90,7 +90,7 @@ export default {
           mutation: require("../../graphql/makeABooking.gql"),
           variables: {
             customerEmail: this.personal.email,
-            bookingDate: this.personal.bookingDate,
+            bookingDate: this.personal.date,
             listingId: this.$route.params.id,
             customers: this.customers,
           },
