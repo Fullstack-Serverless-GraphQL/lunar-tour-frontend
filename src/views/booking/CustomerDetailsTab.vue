@@ -9,12 +9,7 @@
       </BodyOne>
       <Input placeholder="date" type="date" v-model="personal.date" />
     </div>
-    <div class="mt-5">
-      <BodyOne>
-        Number of people
-      </BodyOne>
-      <Input placeholder="3" type="number" v-model="personal.number" />
-    </div>
+
     <div class="mt-5">
       <BodyOne> Email address </BodyOne>
       <Input

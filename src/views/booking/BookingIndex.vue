@@ -66,7 +66,6 @@ export default {
       personal: {
         date: "",
         email: "",
-        number: "",
       },
       customers: [],
       isLoading: false,
