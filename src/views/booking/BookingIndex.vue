@@ -100,6 +100,7 @@ export default {
           console.log(data);
           this.isLoading = false;
           this.mutationObject = data.data.makeABooking;
+          this.activeKey = "4";
         })
         .catch((error) => {
           console.log(error);

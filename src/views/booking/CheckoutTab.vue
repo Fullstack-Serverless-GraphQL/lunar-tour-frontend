@@ -54,7 +54,6 @@ export default {
   methods: {
     submitBooking() {
       this.$emit("makeBooking");
-      this.$emit("goNext", 4);
     },
     pay() {
       createToken().then((data) => console.log(data.token));
