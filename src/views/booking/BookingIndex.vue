@@ -33,7 +33,13 @@
       <!-- TAB THREE --->
 
       <a-tab-pane tab="Tab 3" key="3" class="text-black flex justify-center">
-        <CheckoutTab v-on:goNext="next" @makeBooking="mutate" />
+        <CheckoutTab
+          v-on:goNext="next"
+          :errors="hasError"
+          :loading="isLoading"
+          :showErrorMessage="showError"
+          @makeBooking="mutate"
+        />
       </a-tab-pane>
       <!-- TAB THREE END--->
       <!-- TAB FOUR --->

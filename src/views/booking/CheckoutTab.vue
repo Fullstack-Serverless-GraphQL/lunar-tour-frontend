@@ -14,7 +14,7 @@
       stripe="pk_test_IQEA1vOcYdHCZWvmHTZkeTt3"
       :options="stripeOptions"
     />
-    <BodyOne v-if="error"> {{ error }}</BodyOne>
+    <BodyOne v-if="errors"> {{ showErrorMessage }}</BodyOne>
     <BodyOne v-if="loading"> Busy booking your trip</BodyOne>
     <div class="flex flex-row mt-20">
       <RedBlockButton
@@ -45,6 +45,11 @@ export default {
     RedOutlineButton,
     BodyOne,
     Card,
+  },
+  props: {
+    errors: Boolean,
+    loading: Boolean,
+    showErrorMessage: String,
   },
   methods: {
     submitBooking() {
