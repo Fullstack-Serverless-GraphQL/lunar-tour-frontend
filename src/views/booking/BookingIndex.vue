@@ -33,13 +33,13 @@
       <!-- TAB THREE --->
 
       <a-tab-pane tab="Tab 3" key="3" class="text-black flex justify-center">
-        <CheckoutTab v-on:goNext="next" />
+        <CheckoutTab v-on:goNext="next" @makeBooking="mutate" />
       </a-tab-pane>
       <!-- TAB THREE END--->
       <!-- TAB FOUR --->
 
       <a-tab-pane tab="Tab 4" key="4" class="text-black flex justify-center">
-        <SuccessTab v-on:goNext="next" @makeBooking="mutate" />
+        <SuccessTab />
       </a-tab-pane>
       <!-- TAB FOUR END--->
     </a-tabs>

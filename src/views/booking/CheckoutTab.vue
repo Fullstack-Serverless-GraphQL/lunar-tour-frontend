@@ -20,7 +20,7 @@
       <RedBlockButton
         @click="
           pay();
-          mutate();
+          submitBooking();
         "
         text="Pay"
         class="mr-5"
@@ -45,6 +45,11 @@ export default {
     RedOutlineButton,
     BodyOne,
     Card,
+  },
+  methods: {
+    submitBooking() {
+      this.$emit("makeBooking");
+    },
   },
 };
 </script>
