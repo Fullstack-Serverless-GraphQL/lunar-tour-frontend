@@ -25,11 +25,7 @@
         text="Proceed"
         class="mr-5 s:mb-5 lg:mb-0"
       />
-      <RedBlockButton
-        @click="submit()"
-        text="show data"
-        class="mr-5 s:mb-5 lg:mb-0"
-      />
+
       <RedOutlineButton @click="$router.push('/')" text="Cancel" />
     </div>
   </div>
@@ -57,9 +53,15 @@ export default {
     };
   },
 
-  methods: {
-    submit() {
-      this.$emit("inputData", this.email, this.date, this.number);
+  watch: {
+    date() {
+      this.$emit("input", this.date);
+    },
+    number() {
+      this.$emit("input", this.number);
+    },
+    email() {
+      this.$emit("input", this.email);
     },
   },
 };

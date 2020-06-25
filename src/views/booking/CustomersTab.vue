@@ -56,6 +56,11 @@
         text="Proceed"
         class="mr-5 s:mb-5  lg:mb-0"
       />
+      <RedBlockButton
+        @click="submit()"
+        text="show data"
+        class="mr-5 s:mb-5 lg:mb-0"
+      />
       <RedOutlineButton @click="$emit('goNext', 1)" text="Back" />
     </div>
   </div>
@@ -83,11 +88,7 @@ export default {
   data() {
     return {
       activeKey: "1",
-      email: "",
-      number: "",
-      date: "",
       customers: [],
-      test: "",
     };
   },
   methods: {
@@ -102,6 +103,14 @@ export default {
     },
     removeCustomer(i) {
       this.customers.splice(i, 1);
+    },
+    submit() {
+      this.$emit("inputData");
+    },
+  },
+  watch: {
+    name() {
+      this.$emit("input", this.customers);
     },
   },
 };

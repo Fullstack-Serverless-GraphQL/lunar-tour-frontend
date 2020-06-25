@@ -4,10 +4,11 @@
       <a-tab-pane tab="Tab 1" key="1" class="flex justify-center">
         <CustomerDetailsTab
           v-on:goNext="next"
-          :email="email"
-          :date="date"
-          :number="number"
-          @inputData="showData"
+          @input="
+            (newEmail, newNumber, newDate) => {
+              (email = newEmail), (number = newNumber), (date = newDate);
+            }
+          "
         />
       </a-tab-pane>
 
@@ -16,7 +17,15 @@
       <!-- TAB TWO --->
 
       <a-tab-pane tab="Tab 2" key="2" class="flex justify-center">
-        <CustomersTab v-on:goNext="next" />
+        <CustomersTab
+          v-on:goNext="next"
+          @input="
+            (newCustomers) => {
+              customers = newCustomers;
+            }
+          "
+          @inputData="showData"
+        />
       </a-tab-pane>
       <!-- TAB TWO  END--->
       <!-- TAB THREE --->
@@ -69,12 +78,8 @@ export default {
     removeCustomer(i) {
       this.customers.splice(i, 1);
     },
-    showData(variable, date, number) {
-      console.log(variable);
-      this.email = variable;
-      this.date = date;
-      this.number = number;
-      alert(` ${this.email} ${this.date} ${this.number}`);
+    showData() {
+      alert(` ${this.email} ${this.date} ${this.number} ${this.customers}`);
     },
   },
 };
