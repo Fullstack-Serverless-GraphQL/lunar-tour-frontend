@@ -62,7 +62,7 @@ export default {
   components: { CustomersTab, CustomerDetailsTab, CheckoutTab, SuccessTab },
   data() {
     return {
-      activeKey: "4",
+      activeKey: "1",
       personal: {
         date: "",
         email: "",
