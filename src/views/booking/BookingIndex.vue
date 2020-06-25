@@ -39,7 +39,7 @@
       <!-- TAB FOUR --->
 
       <a-tab-pane tab="Tab 4" key="4" class="text-black flex justify-center">
-        <SuccessTab />
+        <SuccessTab v-on:goNext="next" @makeBooking="mutate" />
       </a-tab-pane>
       <!-- TAB FOUR END--->
     </a-tabs>
@@ -75,6 +75,22 @@ export default {
       alert(
         ` ${this.personal.date}${this.personal.number} ${this.personal.email}  ${this.customers[0].name}`
       );
+    },
+    mutate() {
+      this.$apollo
+        .mutate({
+          mutation: require("../../graphql/makeABooking.gql"),
+          variables: {
+            customerEmail: this.personal.email,
+            bookingDate: this.personal.bookingDate,
+            listingId: this.$route.params.id,
+            customers: this.customers,
+          },
+        })
+        .then((data) => {
+          console.log(data);
+        })
+        .catch((error) => console.log(error));
     },
   },
 };
