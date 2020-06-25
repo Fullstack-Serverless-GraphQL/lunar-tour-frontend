@@ -2,7 +2,7 @@ mutation MAKE_A_BOOKING(
   $customerEmail: String
   $bookingDate: String
   $listingId: String
-  $customers: [InputCustomer]
+  $customers: [CustomerInput]
 ) {
   makeABooking(
     customerEmail: $customerEmail
@@ -10,15 +10,15 @@ mutation MAKE_A_BOOKING(
     listingId: $listingId
     customers: $customers
   ) {
-    ID
+    bookingId
     listingID
     bookingDate
-
+    size
     bookingTotal
     customerEmail
     customers {
       name
-      Surname
+      surname
       country
       passportNumber
       physioScore
