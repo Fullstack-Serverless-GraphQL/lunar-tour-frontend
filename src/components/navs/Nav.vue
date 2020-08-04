@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="nav border-top flex items-center justify-between flex-wrap bg-transparent p-6 z-100"
+    class="nav border-top flex items-center justify-between flex-wrap bg-transparent p-55 z-100"
   >
     <div class="flex items-center flex-no-shrink text">
       <h1 class="font-display text-red text-2xl">
@@ -11,7 +11,7 @@
 </template>
 <script>
 export default {
-  name: "Nav"
+  name: "Nav",
 };
 </script>
 <style scoped>
