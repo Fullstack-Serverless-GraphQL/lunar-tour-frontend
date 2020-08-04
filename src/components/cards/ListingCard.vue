@@ -1,21 +1,26 @@
 <template>
-  <div class="rounded-px w-card h-card shadow-lg-card cursor-pointer">
+  <div class="rounded-px w-card h-auto shadow-lg-card cursor-pointer">
     <img :src="coverPhoto" class="w-full h-48 rounded-t-px" />
     <div class="flex flex-col p-2">
       <div class="flex flex-row mt-2 ">
-        <p class="font-display text-base">{{ listingTitle }}</p>
-        <p class="font-display text-sm text-grey">{{ listingLocation }}</p>
+        <BodyOne class="text-lg text-black font-display">{{
+          listingTitle
+        }}</BodyOne>
+        <BodyOne class=" text-sm text-grey">{{ listingLocation }}</BodyOne>
       </div>
 
-      <p class="font-display text-lg mt-8">${{ price }}</p>
+      <BodyOne class="text-green-dark text-lg mt-8">${{ price }}</BodyOne>
       <a-rate :default-value="rating" disabled />
     </div>
   </div>
 </template>
 <script>
+import BodyOne from "../typography/BodyOne";
 export default {
   name: "ListingCard",
-
+  components: {
+    BodyOne,
+  },
   props: {
     listingTitle: String,
     listingLocation: String,
