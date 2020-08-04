@@ -1,5 +1,6 @@
 <template>
   <div>
+    {{ getAListing.listingName }}
     <a-tabs v-model="activeKey">
       <a-tab-pane tab="Tab 1" key="1" class="flex justify-center">
         <CustomerDetailsTab
@@ -57,10 +58,22 @@ import CustomersTab from "./CustomersTab";
 import CustomerDetailsTab from "./CustomerDetailsTab";
 import SuccessTab from "./SuccessTab";
 import CheckoutTab from "./CheckoutTab";
+
 export default {
   name: "BookingIndex",
   components: { CustomersTab, CustomerDetailsTab, CheckoutTab, SuccessTab },
+  apollo: {
+    getAListing: {
+      query: require("../../graphql/getAListing.gql"),
+      variables() {
+        return {
+          listingId: this.$route.params.id,
+        };
+      },
+    },
+  },
   data() {
+    console.log(this);
     return {
       activeKey: "1",
       personal: {
@@ -72,6 +85,7 @@ export default {
       hasError: false,
       showError: "",
       mutationObject: {},
+      getAListing: {},
     };
   },
   methods: {
