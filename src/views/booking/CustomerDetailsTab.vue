@@ -1,8 +1,5 @@
 <template>
   <div class="flex flex-col p-20 ">
-    <HeadingOne>
-      Booking for Listing Name
-    </HeadingOne>
     <div class="mt-5">
       <BodyOne>
         Booking date
@@ -30,7 +27,6 @@
   </div>
 </template>
 <script>
-import HeadingOne from "../../components/typography/HeadingOne";
 import BodyOne from "../../components/typography/BodyOne";
 import Input from "../../components/inputs/Input";
 import RedBlockButton from "../../components/buttons/RedBlockButton";
@@ -38,7 +34,6 @@ import RedOutlineButton from "../../components/buttons/RedOutlineButton";
 export default {
   name: "CustomerDetailsTab",
   components: {
-    HeadingOne,
     RedBlockButton,
     RedOutlineButton,
     BodyOne,
