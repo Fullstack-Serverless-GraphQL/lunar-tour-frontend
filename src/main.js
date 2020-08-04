@@ -1,7 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
-import { Tabs } from "ant-design-vue";
+import { Tabs, Rate } from "ant-design-vue";
 import StarRating from "vue-star-rating";
 import { createProvider } from "./vue-apollo";
 
@@ -10,6 +10,7 @@ import "ant-design-vue/dist/antd.css";
 
 Vue.config.productionTip = false;
 Vue.use(Tabs);
+Vue.use(Rate);
 
 Vue.component("star-rating", StarRating);
 new Vue({
