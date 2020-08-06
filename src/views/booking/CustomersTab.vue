@@ -48,7 +48,7 @@
       </div>
     </div>
     <div class="mt-5 ">
-      <BlueBlockButton text="Add a customer" @click="addCustomer" />
+      <BlueBlockButton @click="addCustomer">Add a customer</BlueBlockButton>
     </div>
     <div class="flex lg:flex-row mt-5 s:flex-col">
       <RedBlockButton @click="$emit('goNext', 3)" class="mr-5 s:mb-5 lg:mb-0"
