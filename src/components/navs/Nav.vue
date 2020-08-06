@@ -3,7 +3,7 @@
     class="nav border-top flex items-center justify-between flex-wrap bg-transparent"
   >
     <div class="flex items-center flex-no-shrink text">
-      <HeadingOne class="font-display text-red ">
+      <HeadingOne class="font-display text-red pl-2">
         <a class="no-underline text-red" href="/">Lunar</a>
       </HeadingOne>
     </div>
