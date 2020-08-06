@@ -1,10 +1,10 @@
 <template>
-  <p class="text-sm font-display text-bold text-black">
+  <p class="text-base font-display text-bold text-black">
     <slot> </slot>
   </p>
 </template>
 <script>
 export default {
-  name: "BodyOne"
+  name: "BodyOne",
 };
 </script>
