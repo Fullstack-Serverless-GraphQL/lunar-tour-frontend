@@ -22,9 +22,10 @@
   </div>
 </template>
 <script>
-import HeadingOne from "../../components/typography/HeadingOne";
-import BodyOne from "../../components/typography/BodyOne";
+import Typography from "../../components/typography";
 import RedBlockButton from "../../components/buttons/RedBlockButton";
+const { HeadingOne, BodyOne } = Typography;
+
 export default {
   name: "SuccessTab",
   components: {
