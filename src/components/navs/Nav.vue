@@ -1,17 +1,22 @@
 <template>
   <nav
-    class="nav border-top flex items-center justify-between flex-wrap bg-transparent p-55 z-100"
+    class="nav border-top flex items-center justify-between flex-wrap bg-transparent"
   >
     <div class="flex items-center flex-no-shrink text">
-      <h1 class="font-display text-red text-2xl">
+      <HeadingOne class="font-display text-red ">
         <a class="no-underline text-red" href="/">Lunar</a>
-      </h1>
+      </HeadingOne>
     </div>
   </nav>
 </template>
 <script>
+import Typography from "../typography/";
+const { HeadingOne } = Typography;
 export default {
   name: "Nav",
+  components: {
+    HeadingOne,
+  },
 };
 </script>
 <style scoped>
