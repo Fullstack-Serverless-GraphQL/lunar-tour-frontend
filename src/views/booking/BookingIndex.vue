@@ -60,8 +60,8 @@ import CustomersTab from "./CustomersTab";
 import CustomerDetailsTab from "./CustomerDetailsTab";
 import SuccessTab from "./SuccessTab";
 import CheckoutTab from "./CheckoutTab";
-import HeadingOne from "../../components/typography/HeadingOne";
-
+import Typography from "../../components/typography";
+const { HeadingOne } = Typography;
 export default {
   name: "BookingIndex",
   components: {
@@ -82,7 +82,6 @@ export default {
     },
   },
   data() {
-    console.log(this);
     return {
       activeKey: "1",
       personal: {
