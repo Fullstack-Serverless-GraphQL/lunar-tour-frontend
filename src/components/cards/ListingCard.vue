@@ -15,7 +15,8 @@
   </div>
 </template>
 <script>
-import BodyOne from "../typography/BodyOne";
+import Typography from "../typography/";
+const { BodyOne } = Typography;
 export default {
   name: "ListingCard",
   components: {
