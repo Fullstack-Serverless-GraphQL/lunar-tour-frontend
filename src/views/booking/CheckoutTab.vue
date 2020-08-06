@@ -31,12 +31,11 @@
 </template>
 
 <script>
-import HeadingOne from "../../components/typography/HeadingOne";
-import BodyOne from "../../components/typography/BodyOne";
+import Typography from "../../components/typography/";
 import RedBlockButton from "../../components/buttons/RedBlockButton";
 import RedOutlineButton from "../../components/buttons/RedOutlineButton";
 import { Card, createToken } from "vue-stripe-elements-plus";
-
+const { HeadingOne, BodyOne } = Typography;
 export default {
   name: "CheckoutTab",
   components: {
