@@ -64,10 +64,10 @@
             <div class="flex flex-col ">
               <div>
                 <RedBlockButton
-                  text="Book"
                   class=" text-center s:pr-20 mb-10 mt-10"
                   @click.native="forward"
-                />
+                  >Book</RedBlockButton
+                >
               </div>
               <div>
                 <h3 class="font-display text-xl   text-black mt-10 mb-10">

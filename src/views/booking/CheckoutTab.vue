@@ -22,9 +22,9 @@
           pay();
           submitBooking();
         "
-        text="Pay"
         class="mr-5"
-      />
+        >Pay</RedBlockButton
+      >
       <RedOutlineButton @click="$emit('goNext', 2)" text="Back" />
     </div>
   </div>

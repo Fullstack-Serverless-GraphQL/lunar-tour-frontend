@@ -15,11 +15,9 @@
       >
     </div>
     <div class="flex flex-row ml-32 mt-20">
-      <RedBlockButton
-        @click="$router.push('/')"
-        text="Book more"
-        class="mr-5"
-      />
+      <RedBlockButton @click="$router.push('/')" class="mr-5"
+        >Book more</RedBlockButton
+      >
     </div>
   </div>
 </template>

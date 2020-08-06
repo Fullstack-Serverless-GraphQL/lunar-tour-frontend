@@ -51,16 +51,10 @@
       <BlueBlockButton text="Add a customer" @click="addCustomer" />
     </div>
     <div class="flex lg:flex-row mt-5 s:flex-col">
-      <RedBlockButton
-        @click="$emit('goNext', 3)"
-        text="Proceed"
-        class="mr-5 s:mb-5  lg:mb-0"
-      />
-      <RedBlockButton
-        @click="submit()"
-        text="show data"
-        class="mr-5 s:mb-5 lg:mb-0"
-      />
+      <RedBlockButton @click="$emit('goNext', 3)" class="mr-5 s:mb-5 lg:mb-0"
+        >Proceed</RedBlockButton
+      >
+
       <RedOutlineButton @click="$emit('goNext', 1)" text="Back" />
     </div>
   </div>
