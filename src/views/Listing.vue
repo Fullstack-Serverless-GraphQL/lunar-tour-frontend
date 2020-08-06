@@ -51,16 +51,16 @@
                 <p class="font-display ml-2">{{ types.name }}</p>
               </div>
 
-              <h3 class="font-display text-2xl font-bold text-black  mt-10">
+              <HeadingTwo class=" font-bold text-black  mt-10">
                 Activites
-              </h3>
+              </HeadingTwo>
               <div
                 class="flex flex-row p-3"
                 v-for="activies in data.getAListing.listingActivities"
                 :key="activies"
               >
                 <img src="../assets/trip_activity.svg" />
-                <p class="font-display ml-2">{{ activies.name }}</p>
+                <BodyOne class="font-display ml-2">{{ activies.name }}</BodyOne>
               </div>
             </div>
             <div class="flex flex-col ">
@@ -72,9 +72,11 @@
                 >
               </div>
               <div>
-                <h3 class="font-display text-xl   text-black mt-10 mb-10">
+                <HeadingThree
+                  class="font-display text-xl   text-black mt-10 mb-10"
+                >
                   Your guide
-                </h3>
+                </HeadingThree>
                 <img
                   :src="data.getAListing.guide.Avatar"
                   alt="guide"
@@ -82,12 +84,12 @@
                 />
               </div>
               <div>
-                <h3 class="font-display text-xl   text-black mt-10">
+                <HeadingThree class="text-black mt-10">
                   {{ data.getAListing.guide.Name }}
-                </h3>
-                <p class="font-display   text-black mt-5 ">
+                </HeadingThree>
+                <BodyOne class=" text-black mt-5 ">
                   {{ data.getAListing.guide.Bio }}
-                </p>
+                </BodyOne>
               </div>
             </div>
           </div>
