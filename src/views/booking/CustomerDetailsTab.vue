@@ -25,10 +25,11 @@
   </div>
 </template>
 <script>
-import BodyOne from "../../components/typography/BodyOne";
+import Typography from "../../components/typography";
 import Input from "../../components/inputs/Input";
 import RedBlockButton from "../../components/buttons/RedBlockButton";
 import RedOutlineButton from "../../components/buttons/RedOutlineButton";
+const { BodyOne } = Typography;
 export default {
   name: "CustomerDetailsTab",
   components: {
