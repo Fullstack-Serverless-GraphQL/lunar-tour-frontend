@@ -99,7 +99,9 @@
 <script>
 import LandingHeader from "../components/navs/LandingHeader";
 import RedBlockButton from "../components/buttons/RedBlockButton";
-import { HeadingOne } from "../components/typography";
+import Typography from "../components/typography/index";
+console.log(Typography);
+const { HeadingOne } = Typography;
 export default {
   name: "Listing",
   components: {
