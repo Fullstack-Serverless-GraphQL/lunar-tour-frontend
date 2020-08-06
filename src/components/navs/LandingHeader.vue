@@ -12,7 +12,7 @@
 import Typography from "../typography/";
 const { HeadingOne } = Typography;
 export default {
-  name: "Landing Header",
+  name: "LandingHeader",
   components: { HeadingOne },
   props: {
     imgURL: String,
