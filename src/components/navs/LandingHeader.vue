@@ -1,26 +1,29 @@
 <template>
   <div class="image text-center bg-transparent " :style="urlProps">
-    <h1 class="text-white font-display text-5xl pt-44 s:text-4xl">
+    <HeadingOne class="text-white pt-44 s:text-4xl">
       <div v-if="text">
         {{ text }}
       </div>
       <div v-else></div>
-    </h1>
+    </HeadingOne>
   </div>
 </template>
 <script>
+import Typography from "../typography/";
+const { HeadingOne } = Typography;
 export default {
   name: "Landing Header",
+  components: { HeadingOne },
   props: {
     imgURL: String,
     text: String,
-    margin: String
+    margin: String,
   },
   computed: {
     urlProps() {
       return "--img-url:" + `url(${this.imgURL})`;
-    }
-  }
+    },
+  },
 };
 </script>
 <style>
