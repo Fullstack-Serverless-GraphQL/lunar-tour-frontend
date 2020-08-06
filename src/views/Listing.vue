@@ -26,21 +26,21 @@
               >
                 {{ data.getAListing.listingName }}
               </HeadingOne>
-              <h1 class="font-display text-xl text-black mt-4 mb-8">
+              <HeadingThree class="text-black mt-4 mb-8">
                 {{ data.getAListing.listingLocation }}
-              </h1>
-              <h1
-                class="font-display font-bold text-xl text-center s:text-left mb-5 text-black "
+              </HeadingThree>
+              <HeadingThree
+                class=" font-bold  text-center s:text-left mb-5 text-black "
               >
                 $ {{ data.getAListing.price }}
-              </h1>
-              <p class="font-display text-left text-black ">
+              </HeadingThree>
+              <BodyOne class="text-left text-black ">
                 {{ data.getAListing.listingDescription }}
-              </p>
+              </BodyOne>
 
-              <h3 class="font-display text-2xl font-bold text-black mt-10">
+              <HeadingTwo class=" font-bold text-black mt-10">
                 Trip ammenities
-              </h3>
+              </HeadingTwo>
 
               <div
                 class="flex flex-row p-3"
@@ -99,15 +99,17 @@
 <script>
 import LandingHeader from "../components/navs/LandingHeader";
 import RedBlockButton from "../components/buttons/RedBlockButton";
-import Typography from "../components/typography/index";
-console.log(Typography);
-const { HeadingOne } = Typography;
+import Typography from "../components/typography";
+const { HeadingOne, HeadingTwo, HeadingThree, BodyOne } = Typography;
 export default {
   name: "Listing",
   components: {
     LandingHeader,
     RedBlockButton,
     HeadingOne,
+    HeadingThree,
+    BodyOne,
+    HeadingTwo,
   },
   methods: {
     forward() {
