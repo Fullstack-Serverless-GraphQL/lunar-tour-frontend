@@ -55,7 +55,7 @@
         >Proceed</RedBlockButton
       >
 
-      <RedOutlineButton @click="$emit('goNext', 1)" text="Back" />
+      <RedOutlineButton @click="$emit('goNext', 1)">Back</RedOutlineButton>
     </div>
   </div>
 </template>

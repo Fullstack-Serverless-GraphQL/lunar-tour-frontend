@@ -25,7 +25,7 @@
         class="mr-5"
         >Pay</RedBlockButton
       >
-      <RedOutlineButton @click="$emit('goNext', 2)" text="Back" />
+      <RedOutlineButton @click="$emit('goNext', 2)">Back</RedOutlineButton>
     </div>
   </div>
 </template>

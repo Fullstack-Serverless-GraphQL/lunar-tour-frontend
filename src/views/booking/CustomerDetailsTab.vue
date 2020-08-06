@@ -20,7 +20,7 @@
         >Proceed</RedBlockButton
       >
 
-      <RedOutlineButton @click="$router.push('/')" text="Cancel" />
+      <RedOutlineButton @click="$router.push('/')">Cancel</RedOutlineButton>
     </div>
   </div>
 </template>
