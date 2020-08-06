@@ -21,9 +21,11 @@
 
           <div class="grid p-5 mt-10">
             <div class="mr-16">
-              <h1 class="font-display  font-semibold text-3xl text-black">
+              <HeadingOne
+                class="font-display  font-semibold text-3xl text-black"
+              >
                 {{ data.getAListing.listingName }}
-              </h1>
+              </HeadingOne>
               <h1 class="font-display text-xl text-black mt-4 mb-8">
                 {{ data.getAListing.listingLocation }}
               </h1>
@@ -97,11 +99,13 @@
 <script>
 import LandingHeader from "../components/navs/LandingHeader";
 import RedBlockButton from "../components/buttons/RedBlockButton";
+import { HeadingOne } from "../components/typography";
 export default {
   name: "Listing",
   components: {
     LandingHeader,
     RedBlockButton,
+    HeadingOne,
   },
   methods: {
     forward() {
