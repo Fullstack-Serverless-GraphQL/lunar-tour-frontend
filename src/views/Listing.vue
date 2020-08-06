@@ -44,8 +44,8 @@
 
               <div
                 class="flex flex-row p-3"
-                v-for="types in data.getAListing.listingType"
-                :key="types"
+                v-for="(types, index) in data.getAListing.listingType"
+                :key="index"
               >
                 <img src="../assets/trip_type.svg" />
                 <p class="font-display ml-2">{{ types.name }}</p>
@@ -56,8 +56,8 @@
               </HeadingTwo>
               <div
                 class="flex flex-row p-3"
-                v-for="activies in data.getAListing.listingActivities"
-                :key="activies"
+                v-for="(activies, index) in data.getAListing.listingActivities"
+                :key="index"
               >
                 <img src="../assets/trip_activity.svg" />
                 <BodyOne class="font-display ml-2">{{ activies.name }}</BodyOne>
