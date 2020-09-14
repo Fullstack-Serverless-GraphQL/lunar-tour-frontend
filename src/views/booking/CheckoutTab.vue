@@ -11,7 +11,7 @@
       class="stripe-card mt-20 w-full"
       id="card"
       :class="{ complete }"
-      stripe="pk_test_IQEA1vOcYdHCZWvmHTZkeTt3"
+      stripe="{{stripe}}"
       :options="stripeOptions"
     />
     <BodyOne v-if="errors"> {{ showErrorMessage }}</BodyOne>
@@ -44,6 +44,11 @@ export default {
     RedOutlineButton,
     BodyOne,
     Card,
+  },
+  data() {
+    return {
+      stripe: process.env.VUE_APP_STRIPE,
+    };
   },
   props: {
     errors: Boolean,
