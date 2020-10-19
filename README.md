@@ -29,3 +29,11 @@ yarn lint
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Links to related projects
+
+⛽ [Lunar Tour API](https://github.com/Fullstack-Serverless-GraphQL/lunar-tour-api)
+
+⛽ [Lunar Tour (React)](https://github.com/Fullstack-Serverless-GraphQL/lunar-tour-react)
+
+⛽ [Fullstack Serverless GraphQL docs](https://github.com/Fullstack-Serverless-GraphQL/fullstack-serverless-graphql-docs)
