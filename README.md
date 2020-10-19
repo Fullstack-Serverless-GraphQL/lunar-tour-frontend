@@ -4,31 +4,39 @@ Lunar Tour is an app that built in VueJS that allows users to book lunar vacatio
 
 ## Project setup
 
+First go head and clone the project:
+
+```bash
+git clone https://github.com/Fullstack-Serverless-GraphQL/lunar-tour-frontend
 ```
+
+Then cd into the directory of the project:
+
+```bash
+cd lunar-tour-frontend
+```
+
+Once you're in then install the packages using your fav package manager:
+
+```bash
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+To run the app on `localhost://8080` do the following:
 
-```
+```bash
 yarn serve
 ```
 
-### Compiles and minifies for production
+To run Lints and fixes files:
 
-```
-yarn build
-```
-
-### Lints and fixes files
-
-```
+```bash
 yarn lint
 ```
 
 ### Customize configuration
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+This project was scaffolded using the Vue CLI, so if you want to customise things to your liking see the [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Links to related projects
 
