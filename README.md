@@ -4,13 +4,13 @@ Lunar Tour is an app that built in VueJS that allows users to book lunar vacatio
 
 The app is composed of the following:
 
-🍯 Vue Apollo
+🍯 [Vue Apollo](https://apollo.vuejs.org/)
 
-🍯 Ant Design
+🍯 [Ant Design](https://www.antdv.com/)
 
-🍯 Tailwind CSS
+🍯 [Tailwind CSS](https://tailwindcss.com/)
 
-🍯 Vue Router
+🍯 [Vue Router](https://router.vuejs.org/)
 
 ## Project setup
 
