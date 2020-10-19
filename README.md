@@ -1,6 +1,6 @@
 # Lunar Tour Frontend (Vue) 🦚
 
-Lunar Tour is an app that built in VueJS that allows users to book lunar vacations on Moon. It is part of Fullstack Serverless GraphQL, which is a resource that teaches how to build fullstack Serverless GraphQL apps.
+Lunar Tour is an app that built in VueJS that allows users to book lunar vacations on Moon. It is part of [Fullstack Serverless GraphQL](https://fullstack-serverless-graphql.netlify.com/), which is a resource that teaches how to build fullstack Serverless GraphQL apps.
 
 ## Project setup
 
