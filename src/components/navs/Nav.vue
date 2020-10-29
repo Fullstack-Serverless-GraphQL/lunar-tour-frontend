@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="nav border-top flex items-center justify-between flex-wrap bg-transparent"
+    class="nav border-top flex items-center justify-between flex-wrap bg-transparent p-6 z-100"
   >
     <div class="flex items-center flex-no-shrink text">
       <HeadingOne class="font-display text-red pl-2">
