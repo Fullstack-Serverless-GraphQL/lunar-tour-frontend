@@ -31,6 +31,6 @@ export default {
   background: var(--img-url) no-repeat center center;
   background-size: cover;
   height: 570px;
-  margin-top: -90px;
+  margin-top: -138px;
 }
 </style>
