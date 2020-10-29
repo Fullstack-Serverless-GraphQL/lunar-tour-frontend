@@ -11,7 +11,7 @@
       class="stripe-card mt-20 w-full"
       id="card"
       :class="{ complete }"
-      stripe="{{stripe}}"
+      :stripe="stripe"
       :options="stripeOptions"
     />
     <BodyOne v-if="errors"> {{ showErrorMessage }}</BodyOne>
